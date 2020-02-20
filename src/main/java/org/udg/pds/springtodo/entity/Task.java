@@ -54,7 +54,7 @@ public class Task implements Serializable {
   private Long userId;
 
   @ManyToMany(cascade = CascadeType.ALL)
-  private Collection<Tag> tags = new ArrayList<>();
+    private Collection<Tag> tags = new ArrayList<>();
 
   @JsonView(Views.Private.class)
   public Long getId() {
